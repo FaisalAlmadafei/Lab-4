@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        form{
+            width: 50%;
+            margin:  auto;
+        }
+
+        label{
+            display: block;
+           margin-bottom: 5px;
+           font-size: 25px;
+        }
+
+        ::placeholder{
+            font-size: 15px;
+        }
+
+        input , select , textarea{
+            width: 100%;
+            padding: 15px;
+            border: 2px solid rgb(163, 163, 199);
+
+        }
+         textarea{
+            height: 220px;
+            
+         }
+        input[type="submit"]{
+            cursor: pointer;
+            background-color: aquamarine;
+            margin-bottom: 100px;
+        }
+        input[type="submit"]:hover {
+            background-color: rgb(7, 149, 102);
+        }
+        
+    </style>
+ </head>
+ <body>
+   <h1>Great Auto Parts Inc. - Order Form</h1>
+   <form action="">
+    <label for="first_name">First Name:</label>
+   <input type="text" placeholder="Enter FirstName" id="first_name" name="first_name" required><br><br>
+
+   <label for="last_name">Last Name:</label>
+   <input type="text" placeholder="Enter LastName" id="last_name" name="last_name" required><br><br>
+
+   <label for="email">Email:</label>
+   <input type="email" placeholder="Enter your Email" id="email" name="email" required><br><br>
+   <label for="phone">Phone Number:</label>
+   <input type="phone" placeholder="Enter your phoneNumber" id="phone" name="phone" pattern="[05] [0-9]{8}">
+<br><br>
+   <label for="make">Make</label>
+   <select name="make" id="make">
+    <option value="volvo">Volvo</option>
+      <option value="bmw">BMW</option>
+      <option value="audi">Audi</option>
+      <option value="mercedes">Mercedes</option>
+   </select>
+   <br><br>
+   <label for="model">Model</label>
+   <input type="text" id="model" name="model" placeholder="Enter Model">
+   <br><br>
+   <label for="year">Year</label>
+   <input type="number" id="year" name="year" placeholder="Enter year">
+
+<br><br>
+
+   <label for="date">Date</label>
+   <input type="date" id="date" name="date" placeholder="Enter a date">
+   <br><br>
+   <label for="spare">Spare part</label>
+   <input type="text" id="spare" name="spare" placeholder="Enter spare name">
+   <br> <br>
+   <label for="quanitiy">Quantity</label>
+   <input type="number" id="quanitiy" name="quanitiy" placeholder="Enter the quanitiy">
+   <br><br>
+   <label for="comment">Comments</label>
+   <br><br>
+   <textarea id="comment" placeholder="Enter your comments" ></textarea>
+   <br>
+   <input type="submit" value="submit">
+   
+
+
+  
+   </form>
+  
+ </body>
+ 
+ </html>
